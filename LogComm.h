@@ -1,0 +1,32 @@
+#ifndef __LOGCOMM_H__
+#define __LOGCOMM_H__
+
+#include <util/tc_logger.h>
+#include "servant/RemoteLogger.h"
+
+//
+using namespace tars;
+
+//
+#define ROLLLOG(level) (LOG->level() << "[" << __FILE__ << ":" << __LINE__ << ":" << __FUNCTION__ << "] ")
+#define ROLLLOG_DEBUG  (ROLLLOG(debug))
+#define ROLLLOG_INFO   (ROLLLOG(info))
+#define ROLLLOG_WARN   (ROLLLOG(warn))
+#define ROLLLOG_ERROR  (ROLLLOG(error))
+
+#define FUNC_ENTRY(in) (ROLLLOG(debug) << ">>>> Enter " << __FUNCTION__ << "() in(" << in << ")" << endl)
+#define FUNC_EXIT(out, ret) (ROLLLOG(debug) << "<<<< Exit " << __FUNCTION__ << "() out[" << out << "], ret = " << ret << endl)
+
+#define FDLOG_ERROR (FDLOG("error") << __FILE__ << ":" << __LINE__ << ":" << __FUNCTION__ << "|")
+#define FDLOG_EXCEPT (FDLOG("except") << __FILE__ << ":" << __LINE__ << ":" << __FUNCTION__ << "|")
+
+//配置信息
+#define FDLOG_CONFIG_INFO (FDLOG("config_info") << "|")
+
+//身份验证日志
+#define FDLOG_LOGIN_INFO (FDLOG("login_info") << "|")
+#define FDLOG_LOGIN_EXCEPTION_INFO (FDLOG("login_exception_info") << "|")
+
+#endif
+
+

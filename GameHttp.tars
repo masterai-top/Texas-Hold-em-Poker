@@ -1,0 +1,17 @@
+module XGame
+{
+	interface GameHttp
+	{
+		/*
+		* 处理请求接口
+		* @param [in]  reqBuf: 协议请求包(tars编码)
+		* @param [in]  extraInfo: 额外参数
+		* @param [out] rspBuf: 协议响应包(tars编码)
+		* @return 0 - 成功, 其它异常
+		*/
+		int doRequest(vector<byte> reqBuf, map<string, string> extraInfo, out vector<byte> rspBuf);
+	};
+};
+
+
+

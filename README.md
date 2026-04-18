@@ -1,4 +1,50 @@
-# 🃏 Online Poker Platform | 德州扑克在线游戏平台 | 多人扑克系统源码|德州扑克源码 | 德州撲克源碼  
+# Texas Hold'em Poker
+
+Open-source Texas Hold'em poker game / 開源德州撲克遊戲 / 开源德州扑克游戏，适合 learning、二次开发、local deployment.
+
+## 🧠 Project Overview
+
+This is a full online poker platform system.  
+本项目是一套完整的在线德州扑克游戏平台源码。
+
+[![Contact](https://img.shields.io/badge/联系-TG%3A%40xuzongbin001-blue)](https://t.me/xuzongbin001)
+[![Platform](https://img.shields.io/badge/客户端-Unity%20iOS%2FAndroid-green)]()
+[![Backend](https://img.shields.io/badge/服务端-C%2B%2B-red)]()
+
+---
+## Highlights / 亮点 / 亮點
+- Full Texas Hold'em game flow / 完整德州扑克流程 / 完整德州撲克牌局流程.
+- Clear hand evaluation and round management / 清晰的牌型判断与回合管理 / 清晰的牌型判斷與回合管理.
+- Easy to run locally / 易于本地运行 / 易於本地運行.
+- Suitable for learning, customization, and extension / 适合学习、定制与扩展 / 適合學習、客製化與擴展.
+
+## Features / 功能 / 功能
+- Deal cards, betting rounds, showdown, and pot settlement / 发牌、下注轮、摊牌、底池结算 / 發牌、下注輪、攤牌、底池結算.
+- Full table lifecycle and game state management / 完整牌桌生命周期与状态管理 / 完整牌桌生命週期與狀態管理.
+- Clean project structure for learning and modification / 结构清晰，便于学习和修改 / 結構清晰，便於學習和修改.
+- Open-source and easy to integrate into your own project / 开源且易于集成 / 開源且易於整合.
+
+## Quick Start / 快速开始 / 快速開始
+1. Clone the repository / 克隆仓库 / 複製倉庫.
+2. Install dependencies / 安装依赖 / 安裝依賴.
+3. Run the project locally / 本地运行项目 / 本地執行專案.
+
+## Screenshots / 截图 / 截圖
+Add gameplay screenshots or GIFs here / 在这里放游戏截图或 GIF / 在這裡放遊戲截圖或 GIF.
+
+## Project Structure / 项目结构 / 專案結構
+- `src/` Core game logic / 核心游戏逻辑 / 核心遊戲邏輯.
+- `assets/` Images and resources / 图片与资源 / 圖片與資源.
+- `docs/` Documentation and examples / 文档与示例 / 文件與範例.
+
+## Use Cases / 适用场景 / 適用場景
+- Learn Texas Hold'em rules and logic / 学习德州扑克规则与逻辑 / 學習德州撲克規則與邏輯.
+- Build poker-related applications / 开发扑克牌相关应用 / 開發撲克牌相關應用.
+- Extend into AI, simulation, or multiplayer later / 后续扩展为 AI、模拟器或多人在线版本 / 後續擴展為 AI、模擬器或多人線上版本.
+
+## License / 许可证 / 授權
+Add your license here / 请在这里填写 License / 請在這裡填寫 License.
+
 
 > **线上稳定运营多年 | 俱乐部+联盟+私人局 | 10+种玩法 | 刚停服，全套源码可售**
 💡 Build your own poker platform in minutes  
@@ -16,16 +62,6 @@
 
 ---
 
-## 🧠 Project Overview
-
-This is a full online poker platform system.  
-本项目是一套完整的在线德州扑克游戏平台源码。
-
-[![Contact](https://img.shields.io/badge/联系-TG%3A%40xuzongbin001-blue)](https://t.me/xuzongbin001)
-[![Platform](https://img.shields.io/badge/客户端-Unity%20iOS%2FAndroid-green)]()
-[![Backend](https://img.shields.io/badge/服务端-C%2B%2B-red)]()
-
----
 
 ## 🚀 Why Choose This Project | 为什么选择 | 為什麼選擇
 

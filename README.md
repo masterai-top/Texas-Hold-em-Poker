@@ -2,7 +2,7 @@
 
 Open-source Texas Hold'em poker game / 開源德州撲克遊戲 / 开源德州扑克游戏，适合 learning、二次开发、local deployment.
 
-**真实运营数年 · 支持线下验证 ·ALLIN德州扑克源码 ·八个不同德州玩法.德州联盟**
+**真实运营数年 · 支持线下验证 ·ALLIN德州扑克源码 ·十个不同德州玩法.德州联盟**
 
 
 **简体中文 · 繁體中文 · English· 韩文· 马来文· 日文· 泰文· 印尼语·越南文**

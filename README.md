@@ -34,14 +34,31 @@ This is a full online poker platform system.
 2. Install dependencies / 安装依赖 / 安裝依賴.
 3. Run the project locally / 本地运行项目 / 本地執行專案.
 
+## 💰 获取完整源码
+
+📱 **Telegram：@xuzongbin001**  
+📧 **Email：masterai918@gmail.com**
+
+👉 **联系我获取演示视频 + 详细报价**
 ## Screenshots / 截图 / 截圖
 ![03-加入](https://github.com/user-attachments/assets/040be71c-c51e-43a3-9c20-ac40c3f2ae46)
+
+**加入游戏界面***
+
+
 ![01-大厅](https://github.com/user-attachments/assets/cc564154-d734-4092-b582-2c6fb900eee6)
 
+**大厅界面***
 ![07-牌局记录](https://github.com/user-attachments/assets/2f2e38cb-d186-454c-9985-1e5b0018d16c)
+
+**牌局界面***
 ![04-预操作](https://github.com/user-attachments/assets/db643608-4bdc-4ea0-88ec-bff0fb017868)
 ![11-牌局结算](https://github.com/user-attachments/assets/6cbded14-b6a5-4ea4-82eb-59342f997e04)
+
+**结算界面***
 ![09-查看玩家信息](https://github.com/user-attachments/assets/c191e8b4-b696-41b8-8db3-116211bbd398)
+
+**查看玩家界面***
 
 ## Project Structure / 项目结构 / 專案結構
 - `src/` Core game logic / 核心游戏逻辑 / 核心遊戲邏輯.
@@ -143,36 +160,8 @@ Add your license here / 请在这里填写 License / 請在這裡填寫 License.
 - 部署文档
 - 美术资源包
 
-## 💰 获取完整源码
-
-📱 **Telegram：@xuzongbin001**  
-📧 **Email：masterai918@gmail.com**
-
-👉 **联系我获取演示视频 + 详细报价**
-
-## 🎮 Demo | 演示 | 演示
-
-See real gameplay below 👇  
-查看游戏实际画面 👇  
-![03-加入](https://github.com/user-attachments/assets/040be71c-c51e-43a3-9c20-ac40c3f2ae46)
-
-**加入游戏界面***
 
 
-![01-大厅](https://github.com/user-attachments/assets/cc564154-d734-4092-b582-2c6fb900eee6)
-
-**大厅界面***
-![07-牌局记录](https://github.com/user-attachments/assets/2f2e38cb-d186-454c-9985-1e5b0018d16c)
-
-**牌局界面***
-![04-预操作](https://github.com/user-attachments/assets/db643608-4bdc-4ea0-88ec-bff0fb017868)
-![11-牌局结算](https://github.com/user-attachments/assets/6cbded14-b6a5-4ea4-82eb-59342f997e04)
-
-**结算界面***
-![09-查看玩家信息](https://github.com/user-attachments/assets/c191e8b4-b696-41b8-8db3-116211bbd398)
-
-**查看玩家界面***
----
 
 ⭐ 如果觉得项目有价值，请Star支持一下～
 

@@ -44,6 +44,35 @@
 **查看玩家界面***
 
 
+![牌桌1-2](Screenshots/牌桌1-2人.jpg)  
+**2人牌桌**
+
+![申请加入俱乐部](Screenshots/申请加入俱乐部.jpg)  
+**申请加入俱乐部 | Join Club**
+
+![9人牌桌](Screenshots/牌桌1-9人.jpg)  
+**9人牌桌**
+
+![好友局](Screenshots/牌桌2.jpg)  
+**好友局房间 | Friends Room**
+
+![买筹码](Screenshots/牌桌3.jpg)  
+**买筹码**
+
+![游戏中设置](Screenshots/牌桌4.jpg)  
+**游戏中设置**
+
+![游戏中换座](Screenshots/牌桌5.jpg)  
+**游戏中换座]**                                                                                                          ![好友局](Screenshots/牌桌6.jpg)  
+
+
+![牌谱记录](Screenshots/牌谱记录1.jpg)  
+**牌谱记录**
+
+
+![聊天](Screenshots/聊天.jpg)  
+**聊天**
+
 
 ## 🎥 视频演示
 

@@ -1,0 +1,15 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:d4afcd4679ae8cafd97b3f6dd0555cf1:339488bf600fc4b00d26903b787eb3a3:0a4869e137c4080f2fcbe57ddf50db62$
+#
+:format=40300
+:texture=t_setting.png
+:size=512x512
+:pivotpoints=enabled
+:borders=disabled
+
+icon_shezhi_shengji;1;242;276;269; 0.5;0.5; 0;0;0;0

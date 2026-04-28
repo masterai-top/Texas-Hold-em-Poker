@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 513a7563ac4f40f4eb0950c30f6aa521
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7241601894461117272
+    second: icon_shezhi_01
+  - first:
+      213: -6771501302693873087
+    second: icon_shezhi_02
+  - first:
+      213: -5906992749758747918
+    second: icon_shezhi_03
+  - first:
+      213: 4856750729747008813
+    second: icon_shezhi_04
+  - first:
+      213: -1450236330910519668
+    second: icon_shezhi_05
+  - first:
+      213: 7785370511376057352
+    second: icon_shezhi_06
+  - first:
+      213: -8010239334705677403
+    second: icon_shezhi_07
+  - first:
+      213: -2061970302436496083
+    second: icon_shezhi_08
+  - first:
+      213: -9071632513140150441
+    second: icon_shezhi_09
+  - first:
+      213: -6016772376607794902
+    second: icon_shezhi_10
+  - first:
+      213: -8926174155884007298
+    second: icon_shezhi_12
+  - first:
+      213: 288651446522950085
+    second: icon_shezhi_13
+  - first:
+      213: 5991303347181071285
+    second: icon_shezhi_14
+  - first:
+      213: 2723771691970258296
+    second: icon_shezhi_15
+  - first:
+      213: -7157072888139650038
+    second: icon_shezhi_fenxiang
+  - first:
+      213: -2380634856472107532
+    second: icon_shezhi_gou
+  - first:
+      213: 2398377656333282801
+    second: icon_shezhi_haoyou
+  - first:
+      213: 2259783324067737716
+    second: icon_shezhi_shezhi
+  - first:
+      213: -6497895701757915055
+    second: icon_shezhi_youxiang
+  - first:
+      213: 3330765796517060136
+    second: img_shezhi_shengji
+  - first:
+      213: 4681804089267741000
+    second: icon_shezhi_shengji
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon_shezhi_shengji
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 242
+        width: 276
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84166c0930c19f040800000000000000
+      internalID: 4681804089267741000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: e762a37a6bdc9ac4b9b8f42d4b0a066b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4170976518551455693
+    second: btn_denglu_1
+  - first:
+      213: 8854561050131652785
+    second: btn_denglu_2
+  - first:
+      213: -6608269254512731681
+    second: btn_denglu_3
+  - first:
+      213: 8454593424303344693
+    second: btn_denglu_yuyan
+  - first:
+      213: -5544692193893159654
+    second: icon_denglu_fb
+  - first:
+      213: -4377706215060809042
+    second: icon_denglu_guest
+  - first:
+      213: -7124902062031616279
+    second: icon_denglu_shanchu
+  - first:
+      213: -842937510853694347
+    second: icon_denglu_shouji
+  - first:
+      213: -5020760233669482586
+    second: icon_denglu_tp
+  - first:
+      213: -5175703090853549247
+    second: img_denglu_biaoqian
+  - first:
+      213: 5818107831753223555
+    second: img_denglu_fankui
+  - first:
+      213: 33441787447844540
+    second: img_denglu_jiazai
+  - first:
+      213: -7590554337814433716
+    second: img_denglu_jingdutiao
+  - first:
+      213: 7738572747572052611
+    second: img_denglu_jingdutiaobg
+  - first:
+      213: 2352142041942961930
+    second: img_denglu_line
+  - first:
+      213: -5227996071965229123
+    second: img_denglu_shurukuang
+  - first:
+      213: -5082166941870590084
+    second: icon_denglu_youxiang
+  - first:
+      213: -8265475654655543400
+    second: img_logo
+  - first:
+      213: -3665799427387892079
+    second: img_denglu_jinbei
+  - first:
+      213: -1455035063932857494
+    second: img_denglu_slogan1
+  - first:
+      213: -1918674470931074305
+    second: img_denglu_slogan2
+  - first:
+      213: -1063128890933493228
+    second: img_denglu_slogan3
+  - first:
+      213: -4048822046448458658
+    second: icon_denglu_mima
+  - first:
+      213: 6728585433639430172
+    second: icon_denglu_nicheng
+  - first:
+      213: -3327279636966971788
+    second: icon_denglu_shouji1
+  - first:
+      213: -4188308971904420015
+    second: icon_denglu_shouji2
+  - first:
+      213: -7654581217790218348
+    second: icon_denglu_sousuo
+  - first:
+      213: -5092649490898331454
+    second: icon_denglu_touxiang
+  - first:
+      213: 1830027512967199958
+    second: icon_denglu_xiala
+  - first:
+      213: -5606292321184499288
+    second: icon_denglu_yanzheng
+  - first:
+      213: -4569131947830662139
+    second: icon_denglu_youjiang
+  - first:
+      213: 3990031798860746353
+    second: icon_denglu_youxiang1
+  - first:
+      213: -8999154310791801962
+    second: icon_denglu_youxiang2
+  - first:
+      213: 7475222255012819942
+    second: icon_denglu_chenggong
+  - first:
+      213: -7090608022407632422
+    second: icon_denglu_youke
+  - first:
+      213: 8056174599906292791
+    second: icon_denglu_apple
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon_denglu_apple
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 943
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73470fb7d184dcf60800000000000000
+      internalID: 8056174599906292791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_denglu_youke
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 881
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9abde3299199d90800000000000000
+      internalID: -7090608022407632422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_denglu_jingdutiao
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1008
+        width: 496
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c403546db0fe8a690800000000000000
+      internalID: -7590554337814433716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_denglu_jingdutiaobg
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 496
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3820d87c9eee46b60800000000000000
+      internalID: 7738572747572052611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_denglu_slogan1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 890
+        width: 351
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a635b86815daecbe0800000000000000
+      internalID: -1455035063932857494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_denglu_slogan2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 789
+        width: 351
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2fa88fbbf7f55e0800000000000000
+      internalID: -1918674470931074305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_denglu_slogan3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 688
+        width: 351
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412447908e10f31f0800000000000000
+      internalID: -1063128890933493228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_logo
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 482
+        width: 245
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897fd983fa12b4d80800000000000000
+      internalID: -8265475654655543400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:5ba18dcca2f40faa2ad5a719e1a63559:b794e57daf3ab7a124e77f1bd58e853a:25fbc7b55362fb0898d23022c7137704$
+#
+:format=40300
+:texture=t_login_atlas.png
+:size=512x1024
+:pivotpoints=enabled
+:borders=disabled
+
+icon_denglu_apple;464;943;39;46; 0.5;0.5; 0;0;0;0
+icon_denglu_youke;354;881;108;108; 0.5;0.5; 0;0;0;0
+img_denglu_jingdutiao;1;1008;496;15; 0.5;0.5; 0;0;0;0
+img_denglu_jingdutiaobg;1;991;496;15; 0.5;0.5; 0;0;0;0
+img_denglu_slogan1;1;890;351;99; 0.5;0.5; 0;0;0;0
+img_denglu_slogan2;1;789;351;99; 0.5;0.5; 0;0;0;0
+img_denglu_slogan3;1;688;351;99; 0.5;0.5; 0;0;0;0
+img_logo;1;482;245;204; 0.5;0.5; 0;0;0;0

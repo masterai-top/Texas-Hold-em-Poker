@@ -50,7 +50,7 @@
 ![申请加入俱乐部](Screenshots/申请加入俱乐部.jpg)  
 **申请加入俱乐部 | Join Club**
 
-![9人牌桌](Screenshots/牌桌1-9人.jpg)  
+![9人牌桌](screenshots/牌桌1-9人.jpg)  
 **9人牌桌**
 
 ![好友局](Screenshots/牌桌2.jpg)  

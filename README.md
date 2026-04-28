@@ -53,24 +53,24 @@
 ![9人牌桌](screenshots/牌桌1-9人.jpg)  
 **9人牌桌**
 
-![好友局](Screenshots/牌桌2.jpg)  
+![好友局](screenshots/牌桌2.jpg)  
 **好友局房间 | Friends Room**
 
-![买筹码](Screenshots/牌桌3.jpg)  
+![买筹码](screenshots/牌桌3.jpg)  
 **买筹码**
 
-![游戏中设置](Screenshots/牌桌4.jpg)  
+![游戏中设置](screenshots/牌桌4.jpg)  
 **游戏中设置**
 
-![游戏中换座](Screenshots/牌桌5.jpg)  
+![游戏中换座](screenshots/牌桌5.jpg)  
 **游戏中换座]**                                                                                                          ![好友局](Screenshots/牌桌6.jpg)  
 
 
-![牌谱记录](Screenshots/牌谱记录1.jpg)  
+![牌谱记录](screenshots/牌谱记录1.jpg)  
 **牌谱记录**
 
 
-![聊天](Screenshots/聊天.jpg)  
+![聊天](screenshots/聊天.jpg)  
 **聊天**
 
 

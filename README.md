@@ -82,7 +82,7 @@ git clone https://github.com/masterai-top/Texas-Hold-em-Poker.git
 Telegram：@xuzongbin001
 Email：masterai918@gmail.com
 
-欢迎咨询价格、在线演示、功能定制、部署指导等事宜。
+
 
 感谢 Star 支持！有任何问题请随时联系。
 

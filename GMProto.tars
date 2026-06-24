@@ -1,0 +1,112 @@
+
+/**
+**后台管理服务协议文件
+* 
+**/
+module gm
+{
+    enum E_BUSINESS_TYPE
+    {
+        E_BUSINESS_TYPE_NONE                    = 0,
+        E_PLAYER_DATA_MODIFY_LIST               = 11001,
+        E_PLAYER_DATA_MODIFY_INSERT_UPDATE      = 11002,
+        E_PLAYER_DATA_MODIFY_WHITE_LIST         = 11003,
+        
+        E_GLOBAL_EMAIL_LIST                     = 12001,
+        E_GLOBAL_EMAIL_INSERT_UPDATE            = 12002,
+        E_GLOBAL_EMAIL_DETAIL                   = 12004,
+        E_GLOBAL_EMAIL_DELETE                   = 12005,
+        E_GLOBAL_EMAIL_CONFIG_RELOAD            = 12006,
+
+        E_PERSONAL_EMAIL_LIST                   = 13001,
+        E_PERSONAL_EMAIL_INSERT_UPDATE          = 13002,
+        E_PERSONAL_EMAIL_DETAIL                 = 13004,
+        E_PERSONAL_EMAIL_DELETE                 = 13005,
+
+        E_MARQUEE_LIST                          = 14001, //跑马灯
+        E_MARQUEE_INSERT_UPDATE                 = 14002,
+        E_MARQUEE_DETAIL                        = 14004,
+        E_MARQUEE_DELETE                        = 14005,
+
+
+        E_SYS_INFO_CONFIG_LIST                  = 15001,
+        E_SYS_INFO_CONFIG_INSERT_UPDATE         = 15002,
+        E_SYS_INFO_CONFIG_DETAIL                = 15004,
+        E_SYS_INFO_CONFIG_DELETE                = 15005,
+
+        E_RANBOARD_LIST                         = 16001,
+        E_RANBOARD_INSRET_UPDATE                = 16002,
+        E_RANBOARD_DELETE                       = 16005,
+
+        E_SERVICE_CHARGE_LIST                   = 17001,
+        E_SERVICE_CHARGE_INSERT_UPDATE          = 17002,
+
+        E_MATCH_BASIC_CONFIG_LIST               = 18001,
+        E_MATCH_BASIC_CONFIG_INSERT_UPDATE      = 18002,
+        E_MATCH_BASIC_CONFIG_DETAIL             = 18004,
+        E_MATCH_BASIC_CONFIG_DELETE             = 18005,
+
+        E_MATCH_RULE_CONFIG_LIST                = 19001,
+        E_MATCH_RULE_CONFIG_INSERT_UPDATE       = 19002,
+        E_MATCH_RULE_CONFIG_DELETE              = 19005,
+
+        E_MATCH_REWARD_CONFIG_LIST              = 21001,
+        E_MATCH_REWARD_CONFIG_INSERT_UPDATE     = 21002,
+        E_MATCH_REWARD_CONFIG_DELETE            = 21005,
+
+        E_CERTAIN_VICTORY_CONFIG_LIST           = 22001,
+        E_CERTAIN_VICTORY_CONFIG_INSERT_UPDATE  = 22002,
+        E_CERTAIN_VICTORY_CONFIG_DETAIL         = 22004,
+        E_CERTAIN_VICTORY_CONFIG_DELETE         = 22005,
+
+        E_MALL_LIST                             = 23001,
+        E_MALL_INSERT_UPDATE                    = 23002,
+        E_MALL_DELETE                           = 23005,
+
+        E_PROPS_CONFIG_LIST                     = 24001,
+        E_PROPS_CONFIG_INSERT_UPDATE            = 24002,
+        E_PROPS_CONFIG_DELETE                   = 24005,
+
+        E_GOODS_CONFIG_INSERT_UPDATE            = 24501,
+
+        E_AI_CONFIG_LIST                        = 25001,
+        E_AI_CONFIG_INSERT_UPDATE               = 25002,
+        E_AI_CONFIG_DELETE                      = 25005,
+
+        E_REWARD_POOL_MANAGER_LIST              = 26001,
+        E_REWARD_POOL_MANAGER_INSERT_UPDATE     = 26002,
+        E_REWARD_POOL_MANAGER_DELETE            = 26005,
+
+        E_PROPS_REWARD_CONFIG_LIST              = 27001,
+        E_PROPS_REWARD_CONFIG_INSERT_UPDATE     = 27002,
+        E_PROPS_REWARD_CONFIG_DELETE            = 27005,
+
+        E_DB_CONFIG_RELOAD                      = 28001,
+        E_DB_EXCHANGECODECONFIG_RELOAD          = 28002,
+
+        E_ONLINE_INFO_LIST                      = 29001,
+
+        E_ARRANGE_CARD                          = 30000,
+
+        E_ADS_GOOGLE_NOTIFY                     = 40000,
+        E_ADS_FACEBOOK_NOTIFY                   = 40001,
+        E_ADS_UNITY_NOTIFY                      = 40002,
+
+        E_EXCHANGECODE_UPDATE                   = 41000,
+
+        E_SERVER_UPDATE_NOTIFY                  = 50000,//服务器维护通知
+
+        E_MODIFY_USER_INFO_REGISTER_TIME        = 60000,//修改用户注册时间
+        E_MODIFY_USER_INFO_SAFE_MAIL            = 60001,//修改用户保险箱邮箱
+    };
+
+    //配牌器应答
+    struct GetCardsResp
+    {
+        0 optional vector<short> vecHd;     //手牌，
+        1 optional vector<short> vecComm;   //公共牌，5张
+    };
+}; 
+
+
+

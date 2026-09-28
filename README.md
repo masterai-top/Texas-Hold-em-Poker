@@ -1,147 +1,60 @@
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
 
-# Unity 与 C++ 多人德州扑克平台|德州源码 | 德州撲克完整源碼|Texas Hold’em Online Poker Platform
+# 德州扑克多人实时游戏平台源码
 
-**德州撲克完整源碼** · **Texas Hold’em Poker Platform** · **德州扑克在线游戏平台** · **德州撲克線上遊戲平台**  
-**Multiplayer Poker Game Server + Lobby + Club + Tournament System** | Unity + C++ | Deployment requires independent technical and compliance review
+这是一套面向**多人实时德州扑克平台**的客户端、牌局协议与 C++ 服务端工程参考。与同账号中聚焦“俱乐部运营”或“赛事平台”的项目不同，本仓库重点展示从移动端牌桌到房间状态、下注消息、用户状态和跨模块协议的工程链路。
 
+## 产品是什么
 
-一款**经过真实商业运营验证**的德州扑克在线游戏平台完整源码。支持经典德州扑克及多种变体（AOF快牌、短牌、SNG、MTT等多桌锦标赛），集成大厅、俱乐部、代理联盟、语音聊天、保险等功能。适合二次开发、商用部署或本地运行。
+玩家可以进入大厅，创建或加入俱乐部、联盟、好友局和私人房，并在实时牌桌中完成买入、下注、弃牌、结算和离桌。产品截图还展示 MTT 赛事报名/牌桌、个人中心、俱乐部币、联盟和好友局等界面。玩法与交付范围应以实际分支、配置和验收清单为准。
 
+## 主要功能与玩法
 
-支持多语言（简体中文、繁体中文、English、韩语、马来语、日语、泰语、印尼语、越南语），移动端（iOS/Android）完美适配。
+- **多人实时牌桌**：房间加入/离开、玩家在线状态、牌局开始与结束、下注与结算流程。
+- **好友局与私人房**：创建私人牌桌，邀请熟人或俱乐部成员参与。
+- **俱乐部与联盟**：创建俱乐部、申请加入、联盟入口及俱乐部币等产品模块。
+- **赛事入口**：截图与 `match*.proto.bytes`、赛事页面展示 MTT、SNG 等赛事相关流程；完整赛事规则需结合服务端配置验收。
+- **移动客户端**：仓库包含 Unity/客户端脚本、资源与 Android/iOS 配置相关文件。
+- **运营模块**：个人中心、排行、签到、商城、订单、推送和后台接口等协议或页面。
 
+## 真实产品截图
 
-[立即联系获取在线演示、部署支持](#联系我们)
+| 实时牌桌 | 好友私人局 |
+| --- | --- |
+| ![德州扑克多人实时牌桌](docs/assets/screenshots/poker-table-01.jpg) | ![德州扑克好友私人局](docs/assets/screenshots/private-table-04.jpg) |
+| MTT 赛事 | 创建俱乐部 |
+| ![德州扑克 MTT 赛事界面](docs/assets/screenshots/mtt-tournament-03.jpg) | ![德州扑克创建俱乐部](docs/assets/screenshots/create-club-02.jpg) |
+| 个人中心 | 俱乐部币 |
+| ![德州扑克个人中心](docs/assets/screenshots/player-profile-05.jpg) | ![德州扑克俱乐部币](docs/assets/screenshots/club-coins-07.jpg) |
 
+[打开图文产品页](https://masterai-top.github.io/Texas-Hold-em-Poker/zh-cn/)
 
-## ✨ 核心特性
+## 可从目录核实的技术结构
 
+| 层级 | 文件/目录 | 说明 |
+| --- | --- | --- |
+| 牌局逻辑 | `allin.cpp`、`autobet.cpp`、`autofold.cpp`、`gamebanker.h`、`gameend.h` | 下注、自动操作、庄家/结束等牌局逻辑文件 |
+| 房间生命周期 | `userlefttable.*`、`useroffline.*`、`userinfo.*`、`userinfomapprivate.*` | 离桌、掉线、玩家资料和私桌映射 |
+| 协议层 | `*.proto.bytes`、`GameTcp.tars`、`Push.tars`、`OrderServant.tars` | 大厅、房间、聊天、好友、赛事、订单和推送协议 |
+| 服务端 | `RouterServer.*`、`OrderServer.*`、`Processor.*`、`OuterFactoryImp.*` | 路由、订单、消息处理和外部服务适配 |
+| 客户端 | `GameApp.ts`、`GameLoading.ts`、`MsgHandlerModel.ts`、`Login/`、`Assets/` | 客户端启动、加载、消息处理、登录和资源 |
+| 数据与运营 | `RankBoard.proto.bytes`、`mall.proto.bytes`、`SignIn.proto.bytes`、`Task.proto.bytes` | 排行、商城、签到、任务等接口定义 |
 
-- **丰富玩法**：经典德州扑克、AOF快牌、短牌、SNG单桌赛、MTT多桌锦标赛
-- **大厅与匹配系统**：私房、朋友局、俱乐部匹配、快速加入
-- **俱乐部与代理系统**：俱乐部创建、管理、自定义抽水、排行榜、联盟分润
-- **实时多人对战**：高性能同步、服务端权威验证
-- **社交功能**：房间语音/视频聊天、表情、礼物系统
-- **锦标赛与保险**：定时赛、淘汰赛、保险购买、成就系统
-- **运营工具**：后台管理、数据统计、热更新支持
+## 与同账号项目的定位边界
 
+- 本仓库主关键词：**multiplayer poker source code、real-time poker game、poker protocol、C++ poker server、Unity poker client**。
+- 俱乐部运营细节应优先链接 Club-Source 项目；赛事平台专题应优先链接 Tournament-Event 项目；完整商业方案不在本页重复承诺。
+- 不使用 hhpoker、wpk 等第三方品牌做比较性标题，避免品牌争议和关键词内耗。
 
-## 📸 游戏截图 / Screenshots
+## 开发与部署提醒
 
+公开目录包含工程代码、协议文件、部分客户端资源和文档，但上线前仍需核实依赖库、数据库结构、配置、证书、平台 SDK、监控、压测和地区合规。请勿把截图等同于全部可交付功能。
 
-![03-加入](https://github.com/user-attachments/assets/040be71c-c51e-43a3-9c20-ac40c3f2ae46)
+## 联系方式
 
+- Telegram：[@xuzongbin001](https://t.me/xuzongbin001)
+- Email：[masterai918@gmail.com](mailto:masterai918@gmail.com)
 
-**加入游戏界面**
+请遵守所在地法律、平台规则、隐私与未成年人保护要求，不得用于非法赌博。
 
 
-![01-大厅](https://github.com/user-attachments/assets/cc564154-d734-4092-b582-2c6fb900eee6)
-
-
-**大厅界面**
-
-
-![07-牌局记录](https://github.com/user-attachments/assets/2f2e38cb-d186-454c-9985-1e5b0018d16c)
-
-
-**牌局界面**
-
-
-![04-预操作](https://github.com/user-attachments/assets/db643608-4bdc-4ea0-88ec-bff0fb017868)
-![11-牌局结算](https://github.com/user-attachments/assets/6cbded14-b6a5-4ea4-82eb-59342f997e04)
-
-
-**结算界面**
-
-
-![09-查看玩家信息](https://github.com/user-attachments/assets/c191e8b4-b696-41b8-8db3-116211bbd398)
-
-
-**查看玩家界面***
-
-
-![9人牌桌](screenshots/牌桌1-9人.jpg)  
-**9人牌桌**
-
-
-![好友局](screenshots/牌桌2.jpg)  
-**好友局房间 | Friends Room**
-
-
-![买筹码](screenshots/牌桌3.jpg)  
-**买筹码**
-
-
-![游戏中设置](screenshots/牌桌4.jpg)  
-**游戏中设置**
-
-
-                                                                                                    ![好友局](Screenshots/牌桌6.jpg)  
-
-
-![牌谱记录](screenshots/牌谱记录1.jpg)  
-**牌谱记录**
-
-
-![聊天](screenshots/聊天.jpg)  
-**聊天**
-
-
-## 🎥 视频演示
-
-
-[打开Facebook链接  ](https://www.facebook.com/share/v/1LHRj4he6A/?mibextid=wwXIfr)
-完整演示：进入大厅 → 创建房间 → 实时对战 → 俱乐部管理全流程（10分钟）
-
-
-## 🚀 快速上手
-
-
-git clone https://github.com/masterai-top/Texas-Hold-em-Poker.git
-客户端：打开 Unity 项目即可运行（支持打包 iOS/Android）
-服务端：参考 makefile 编译运行 C++ 项目
-数据库：导入 MySQL + Redis 脚本
-
-
-详细部署文档见 docs/ 文件夹（完整版提供更多指导）。
-## 🛠 技术栈
-
-
-客户端：Unity (C#) – 支持 iOS / Android / PC
-服务端：C++（高性能、稳定）
-数据库：MySQL + Redis
-网络：高性能实时通信协议
-
-
-## 💡 为什么选择本项目？
-
-
-代码经过实际商业运营验证，非演示项目
-功能完整，包含全套盈利体系（俱乐部抽水、代理分润、锦标赛门票等）
-支持多语言与移动端，易于面向国际用户
-提供部署技术支持，降低上线门槛
-
-
-## 📜 许可与授权
-本仓库为展示版本，仅供学习研究参考。
-商用授权、完整未加密源码包、技术支持请联系我们获取正式许可。
-
-
-## 📞 联系我们
-
-
-Telegram：@xuzongbin001
-Email：masterai918@gmail.com
-
-
-感谢 Star 支持！有任何问题请随时联系。
-
-
-## ✅ 加徽章（信任提升）
-
-
-```markdown
-![Stars](https://img.shields.io/github/stars/masterai-top/Texas-game-source-code?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/masterai-top/Texas-game-source-code)
-```

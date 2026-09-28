@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masterai-top.github.io/Texas-Hold-em-Poker/sitemap.xml

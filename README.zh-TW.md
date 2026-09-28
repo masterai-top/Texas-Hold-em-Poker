@@ -1,138 +1,55 @@
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
 
-# Unity 與 C++ 多人德州撲克平台|德州源码 | 德州撲克完整源碼|Texas Hold’em Online Poker Platform
+# 德州撲克多人即時平台原始碼
+
+面向**多人即時德州撲克平台**的客戶端、牌局協定與 C++ 服務端工程參考。與同帳號中聚焦俱樂部營運或賽事平台的專案不同，本專案重點是從行動端牌桌到房間狀態、下注訊息、玩家狀態與跨模組協定的完整鏈路。
+
+## 產品是什麼
+
+玩家可進入大廳，建立或加入俱樂部、聯盟、好友局與私人房，並在即時牌桌完成買入、下注、棄牌、結算和離桌。產品截圖展示 MTT 報名/牌桌、個人中心、俱樂部幣、聯盟及好友局等介面。玩法與交付範圍仍應依實際分支、設定與驗收清單為準。
+
+## 主要功能與玩法
+
+- **多人即時牌桌**：房間加入/離開、玩家線上狀態、牌局開始/結束、下注與結算流程。
+- **好友局與私人房**：建立私人牌桌，邀請熟人或俱樂部成員參與。
+- **俱樂部與聯盟**：建立俱樂部、申請加入、聯盟入口及俱樂部幣等產品模組。
+- **賽事入口**：截圖與 `match*.proto.bytes`、賽事頁面展示 MTT、SNG 相關流程；完整賽事規則需結合服務端設定驗收。
+- **行動客戶端**：包含 Unity/客戶端腳本、資源與 Android/iOS 設定相關檔案。
+- **營運模組**：個人中心、排行、簽到、商城、訂單、推送與後台介面等協定或頁面。
+
+## 真實產品截圖
+
+| 即時牌桌 | 好友私人局 |
+| --- | --- |
+| ![德州撲克多人即時牌桌](docs/assets/screenshots/打牌房間.jpg) | ![德州撲克好友私人局](docs/assets/screenshots/private-table-04.jpg) |
+| MTT 賽事 | 建立俱樂部 |
+| ![德州撲克 MTT 賽事介面](docs/assets/screenshots/mtt-tournament-03.jpg) | ![德州撲克建立俱樂部](docs/assets/screenshots/create-club-02.jpg) |
+| 個人中心 | 俱樂部幣 |
+| ![德州撲克個人中心](docs/assets/screenshots/player-profile-05.jpg) | ![德州撲克俱樂部幣](docs/assets/screenshots/club-coins-07.jpg) |
+
+[開啟圖文產品頁](https://masterai-top.github.io/Texas-Hold-em-Poker/zh-tw/)
+
+## 可從目錄核實的技術結構
+
+| 層級 | 檔案/目錄 | 說明 |
+| --- | --- | --- |
+| 牌局邏輯 | `allin.cpp`、`autobet.cpp`、`autofold.cpp`、`gamebanker.h`、`gameend.h` | 下注、自動操作、莊家/結束等牌局邏輯 |
+| 房間生命週期 | `userlefttable.*`、`useroffline.*`、`userinfo.*`、`userinfomapprivate.*` | 離桌、離線、玩家資料與私桌映射 |
+| 協定層 | `*.proto.bytes`、`GameTcp.tars`、`Push.tars`、`OrderServant.tars` | 大廳、房間、聊天、好友、賽事、訂單與推送協定 |
+| 服務端 | `RouterServer.*`、`OrderServer.*`、`Processor.*`、`OuterFactoryImp.*` | 路由、訂單、訊息處理與外部服務適配 |
+| 客戶端 | `GameApp.ts`、`GameLoading.ts`、`MsgHandlerModel.ts`、`Login/`、`Assets/` | 客戶端啟動、載入、訊息處理、登入與資源 |
+| 資料與營運 | `RankBoard.proto.bytes`、`mall.proto.bytes`、`SignIn.proto.bytes`、`Task.proto.bytes` | 排行、商城、簽到與任務介面定義 |
+
+## 與同帳號專案的定位邊界
+
+- 本專案主關鍵詞：**multiplayer poker source code、real-time poker game、poker protocol、C++ poker server、Unity poker client**。
+- 俱樂部營運細節優先連結 Club-Source 專案；賽事平台專題優先連結 Tournament-Event 專案；本頁不重複承諾完整商業方案。
+
+## 聯絡方式
+
+- Telegram：[@xuzongbin001](https://t.me/xuzongbin001)
+- Email：[masterai918@gmail.com](mailto:masterai918@gmail.com)
+
+請遵守所在地法律、平台規則、隱私及未成年人保護要求，不得用於非法賭博。
 
 
-**德州撲克完整源碼** · **Texas Hold’em Poker Platform** · **德州撲克線上遊戲平台** · **德州撲克在線遊戲平台**
-
-**Multiplayer Poker Game Server + Lobby + Club + Tournament System** | Unity + C++ | Deployment requires independent technical and compliance review
-
-
-一款**經過真實商業運營驗證**的德州撲克線上遊戲平台完整原始碼。
-支援經典德州撲克及多種變體（AOF快牌、短牌、SNG、MTT等多桌錦標賽），整合大廳、俱樂部、代理商聯盟、語音聊天、保險等功能。
-適合二次開發、商用部署或本地運作。
-
-
-支援多語言（簡體中文、繁體中文、English、韓語、馬來語、日語、泰語、印尼語、越南語），行動端（iOS/Android）完美適合。
-
-
-[立即聯繫以取得線上示範、部署支援](#聯絡我們)
-
-
-## ✨ 核心特性
-
-
-- **豐富玩法**：經典德州撲克、AOF快牌、短牌、SNG單桌賽、MTT多桌錦標賽
-
-- **大廳與匹配系統**：私人、朋友局、俱樂部匹配、快速加入
-
-- **俱樂部與代理商系統**：俱樂部創建、管理、自訂抽水、排行榜、聯盟分潤
-
-- **即時多人對戰**：高效能同步、服務端權威驗證
-
-- **社交功能**：房間語音/視訊聊天、表情、禮物系統
-
-- **錦標賽與保險**：定時賽、淘汰賽、保險購買、成就係統
-
-- **營運工具**：後台管理、數據統計、熱更新支持
-
-
-## 📸 遊戲截圖 / Screenshots
-![03-加入](https://github.com/user-attachments/assets/040be71c-c51e-43a3-9c20-ac40c3f2ae46)
-**加入遊戲介面**
-![01-大厅](https://github.com/user-attachments/assets/cc564154-d734-4092-b582-2c6fb900eee6)
-**大廳介面**
-![07-牌局记录](https://github.com/user-attachments/assets/2f2e38cb-d186-454c-9985-1e5b0018d16c)
-**牌局介面**
-![04-预操作](https://github.com/user-attachments/assets/db643608-4bdc-4ea0-88ec-bff0fb017868)
-![11-牌局结算](https://github.com/user-attachments/assets/6cbded14-b6a5-4ea4-82eb-59342f997e04)
-**結算介面**
-![09-查看玩家信息](https://github.com/user-attachments/assets/c191e8b4-b696-41b8-8db3-116211bbd398)
-**查看玩家介面***
-![9人牌桌](screenshots/牌桌1-9人.jpg)  
-**9人牌桌**
-![好友局](screenshots/牌桌2.jpg)  
-**好友局房間 | Friends Room**
-![买筹码](screenshots/牌桌3.jpg)  
-**買籌碼**
-![游戏中设置](screenshots/牌桌4.jpg)  
-**遊戲中設定**
-                                                                                                    ![好友局](Screenshots/牌桌6.jpg)  
-
-
-![牌谱记录](screenshots/牌谱记录1.jpg)  
-**牌譜記錄**
-![聊天](screenshots/聊天.jpg)  
-**聊天**
-
-
-## 🎥 影片示範
-
-
-[開啟Facebook連結 ](https://www.facebook.com/share/v/1LHRj4he6A/?mibextid=wwXIfr)
-
-完整示範：進入大廳 → 建立房間 → 即時對戰 → 俱樂部管理全流程（10分鐘）
-
-
-## 🚀 快速上手
-
-
-git clone https://github.com/masterai-top/Texas-Hold-em-Poker.git
-
-客戶端：開啟 Unity 專案即可運作（支援打包 iOS/Android）
-
-服務端：參考 makefile 編譯運行 C++ 項目
-
-資料庫：匯入 MySQL + Redis 腳本
-
-
-詳細部署文件請見 docs/ 資料夾（完整版提供更多指導）。
-
-## 🛠 技術堆疊
-
-
-客戶端：Unity (C#) – 支援 iOS / Android / PC
-
-服務端：C++（高效能、穩定）
-
-資料庫：MySQL + Redis
-
-網路：高效能即時通訊協議
-
-
-## 💡 為什麼選擇本項目？
-
-
-程式碼經過實際商業運營驗證，非演示項目
-
-功能完整，包含全套獲利體系（俱樂部抽水、代理分潤、錦標賽門票等）
-
-支援多語言與行動端，易於面向國際用戶
-
-提供部署技術支持，降低上線門檻
-
-
-## 📜 授權與授權
-
-本倉庫為展示版本，僅供學習研究參考。
-
-商用授權、完整未加密原始碼包、技術支援請聯絡我們以取得正式許可。
-
-
-## 📞 聯絡我們
-
-
-Telegram：@xuzongbin001
-
-Email：masterai918@gmail.com
-
-
-感謝 Star 支持！
-有任何問題請隨時聯繫。
-
-
-## ✅ 加徽章（信任提升）
-```markdown
-![Stars](https://img.shields.io/github/stars/masterai-top/Texas-game-source-code?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/masterai-top/Texas-game-source-code)
-```
